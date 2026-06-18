@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Survivor: The Suspense Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        @keyframes pulse-neon {
+            0%, 100% { border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 0 5px rgba(16, 185, 129, 0.2); }
+            50% { border-color: rgba(16, 185, 129, 1); box-shadow: 0 0 20px rgba(16, 185, 129, 0.6); }
+        }
+        .neon-glow { animation: pulse-neon 2s infinite; }
+        @keyframes custom-shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            75% { transform: translateX(4px); }
+        }
+        .shake-effect { animation: custom-shake 0.2s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-[#070a13] text-gray-300 min-h-screen selection:bg-emerald-500 selection:text-black relative scroll-smooth">
+
+    <div class="sticky top-0 z-50 bg-[#0c1122]/90 backdrop-blur-md border-b border-gray-800 px-4 py-3">
+        <div class="max-w-3xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                <span class="text-xs font-mono font-bold uppercase tracking-wider text-red-400">Status: Kitab Saaf, Demagh Saaf</span>
+            </div>
+            <div class="w-full sm:w-64 bg-gray-900 h-2.5 rounded-full overflow-hidden border border-gray-800">
+                <div id="dustBar" class="bg-gradient-to-r from-emerald-500 to-teal-400 h-full w-full transition-all duration-300"></div>
+            </div>
+            <span id="dustStatus" class="text-[11px] font-mono font-semibold text-emerald-400 uppercase">Book Condition: 100% Brand New (Urdu Bazar Fragrance)</span>
+        </div>
+    </div>
+
+    <main class="max-w-3xl mx-auto px-4 py-16 relative">
+
+        <header class="text-center mb-24 relative">
+            <div class="absolute inset-0 bg-emerald-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+            <span class="text-xs font-extrabold tracking-widest text-emerald-400 uppercase bg-emerald-950/60 border border-emerald-800/80 px-4 py-1.5 rounded-full inline-block mb-4">
+                The Official I.Com Sequel
+            </span>
+            <h1 class="heading-font text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-none">
+                Accounting <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">Survivor</span>
+            </h1>
+            <p class="text-xl font-bold text-gray-500 mt-2 font-mono uppercase tracking-widest">The Suspense Account</p>
+            <p class="text-gray-400 mt-6 text-sm sm:text-base max-w-lg mx-auto leading-relaxed border border-dashed border-gray-800 p-4 rounded-xl bg-[#0d1222]/40">
+                A massive, audited chronological timeline of how an entire academic year was successfully wasted without opening the textbook once, leading straight to the 7:00 AM guess-paper emergency protocols.
+            </p>
+        </header>
+
+        <div class="space-y-12 relative before:absolute before:inset-y-0 before:left-4 sm:before:left-1/2 before:w-[1px] before:bg-gray-800/60">
+
+            <div class="text-center relative my-16">
+                <span class="bg-[#070a13] px-4 py-2 text-xs font-bold text-gray-500 uppercase tracking-widest border border-gray-800 rounded-md">
+                    Phase 1: Brand New Uniform & Absolute Delusion
+                </span>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 01</span>
+                        <span class="text-[10px] text-gray-500 font-mono">October Vibe</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Introduction to Accounting</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        The first week of college where you sit with your back straight, holding a brand new high-gloss textbook from Urdu Bazar that smells like factory ink and false hope. You spend three full lectures aggressively trying to memorize what a "Proprietor" and "Solvent" means, feeling like an elite Wall Street hedge-fund titan. In reality, the book is spendings its energy describing your local neighborhood karyana shop uncle who keeps track of a 40-rupee bread credit on a greasy piece of old cardboard behind the counter.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row-reverse items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 02</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Formula Era</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Transaction & Accounting Equation</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        The ultimate psychological trap. The teacher writes <code class="text-emerald-400 font-mono bg-emerald-950/30 px-1 rounded">Assets = Liabilities + Capital</code> on the board, and it actually makes sense. You plug in a few numbers, the left side equals the right side, and you look around the classroom with immense pride, thinking accounting is a joke. You confidently close your register, put your pen away, and decide you don't need to study this subject anymore because you have already "mastered the core foundations." Little do you know, this is the last time something will balance voluntarily.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 03</span>
+                        <span class="text-[10px] text-gray-500 font-mono">The Fork in the Road</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Analysis of Transactions & Double Entry System</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        This is the exact moment where your academic career splits. The teacher starts talking about "Debit what comes in, credit what goes out," but you are too busy staring out the window checking if the samosas at the college canteen are fresh, or secretly scrolling crypto charts under the desk. You miss one crucial lecture, and suddenly the rules of double-entry turn into ancient Egyptian hieroglyphics. You stop tracking what is coming in or going out, and the book officially transitions into a permanent decorative headrest for your room's computer table.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="text-center relative my-16">
+                <span class="bg-[#070a13] px-4 py-2 text-xs font-bold text-gray-500 uppercase tracking-widest border border-gray-800 rounded-md">
+                    Phase 2: The Drawing & Coloring Competition
+                </span>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row-reverse items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 04</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Ruler Labor</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Journal: The Original Book of Entry</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        This isn’t a business science chapter; it’s an intense engineering drawing assignment. You spend 90% of your time using a 30cm long wooden ruler and a black Dollar pointer trying to draw perfectly parallel vertical columns for Date, Particulars, L.F., Debit, and Credit. If your line is slightly crooked, you tear the page out and start again. You perform manual graphic design labor for six hours just to write down that *"Mr. Ahmed started business with cash"* for the nine-hundredth time.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 05</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Ink Stained Madness</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Ledger: The Main Book of Accounts</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        The chapter dedicated to copying what you just wrote in Chapter 4 into a bunch of tiny boxes called T-Accounts. It’s literal data-entry sweatshop work. By midnight, your thumbs are permanently stained black with blue fountain pen ink, you have a massive headache, and you realize you accidentally posted a massive debit item on the credit side three pages back, rendering the past two hours of your life completely useless.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row-reverse items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 07</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Micro Management</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Special Journal</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        Because apparently, one single chaotic Journal wasn't making you suffer enough. Now the book forces you to create separate individual sub-journals for Purchases, Sales, Purchase Returns, and Sales Returns. You are basically micro-managing an imaginary trader who does nothing but buy items on credit and immediately return them because he bought the wrong size. You realize you haven't opened the textbook to read the actual logic since November.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 09</span>
+                        <span class="text-[10px] text-gray-500 font-mono">The Laundry Basket</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Journal Proper</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        The ultimate spiritual dumping ground. If an entry is too weird, too broken, or doesn't fit into any premium special book, you just violently kick it into the Journal Proper. It is the accounting equivalent of throwing all the messy clothes, dirty dishes, and old wrappers floating around your room into the dark cupboard five seconds before guests walk through your front door.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="text-center relative my-16">
+                <span class="bg-[#070a13] px-4 py-2 text-xs font-bold text-gray-500 uppercase tracking-widest border border-gray-800 rounded-md">
+                    Phase 3: The Toxic Desi Relationships
+                </span>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row-reverse items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 06</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Desi Drama</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Accounting for Bills of Exchange</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        The single most dramatic, toxic chapter in financial history. Why is Mr. Aslam constantly drawing a three-month legal bill on Mr. Babar? And why does Babar *always* without fail dishonor the bill right on the maturity date because he has no cash? If these two clowns just sent each other an EasyPaisa payment request or a JazzCash link, the entire I.Com student body wouldn't be forced to track their toxic credit problems in an exam. Stop involving us in your court cases, please.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 08</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Bank Auditing</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Cash Book & Bank Reconciliation Statement</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        A raw psychological thriller. Your private notebook (Cash Book) proudly insists that you are an absolute millionaire with 95,000 PKR in solid liquid reserves. However, the actual official bank statement (Pass Book) looks you dead in the eye and says your balance is negative 32 rupees because of uncredited items and automated monthly "SMS Alert Charges." You spend forty minutes looking for an "unpresented cheque" that exists solely in the deep imagination of the examiner.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="text-center relative my-16">
+                <span class="bg-[#070a13] px-4 py-2 text-xs font-bold text-gray-500 uppercase tracking-widest border border-gray-800 rounded-md">
+                    Phase 4: The 2:00 AM Night-Before Climax
+                </span>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row-reverse items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 10</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Midnight Panic</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Final Accounts</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        The ultimate boss has entered the arena. It is 2:15 AM on the night before the board exam, and you finally unpack the book from its factory plastic wrapping. The crisp white pages snap loudly. You stare at the formatting structure of Trading Accounts and Gross Profit calculations, and your brain completely short-circuits. You realize that you cannot learn an entire year of corporate balance mechanisms in 4 hours, so you drop the book entirely and put 100% of your faith into a 3-page leaked Guess Paper.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row items-start justify-between group">
+                <div class="w-full sm:w-[#46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 11</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Hidden Traps</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Adjustments & Their Effects on Final Accounts</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        Absolute structural torture. You think you have flawlessly solved the full 20-mark long question, and suddenly your eyes wander to the absolute bottom of the question sheet where the examiner has hidden three tiny text bombs: *"Closing Stock valued at 12,000"* and *"Outstanding Salaries 1,500"*. Why are these salaries always outstanding? Why can't this fictional business owner just pay his staff on time so we can all go to sleep?
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row-reverse items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 12</span>
+                        <span class="text-[10px] text-gray-500 font-mono">The Matrix Grid</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Work Sheet</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        A colossal 10-column spreadsheet nightmare designed to completely blind the student. It is an entire chapter explicitly built to prove that every single piece of data entry you carried out in the previous 11 chapters was completely filled with mistakes anyway. You look at the sheer scale of the table rows at 3:30 AM, sigh deeply, turn off the lights, and accept your financial destiny.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 13</span>
+                        <span class="text-[10px] text-gray-500 font-mono">The Hall Climax</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Financial Statement & Balance Sheet</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        The absolute moment of reckoning inside the board exam center. You manually calculate the Asset side column: **184,340 PKR**. You slowly calculate the Liabilities column with trembling fingers: **184,310 PKR**. A brutal, mocking difference of exactly 30 rupees. The supervisor loudly shouts that there are 60 seconds left. You don't have time to re-audit. You deploy the legendary back-bencher "Eraser, spit, and heavy pointer overwrite" routine to forcefully make the numbers match.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="text-center relative my-16">
+                <span class="bg-[#070a13] px-4 py-2 text-xs font-bold text-gray-500 uppercase tracking-widest border border-gray-800 rounded-md">
+                    Phase 5: The Post-Mortem Cover-Up
+                </span>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row-reverse items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 14</span>
+                        <span class="text-[10px] text-gray-500 font-mono">Brain Drainage</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Capital & Revenue Expenditures</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        An entire chapter trying to make you theoretically argue whether buying a second-hand rusty Suzuki pickup van for delivery runs counts as a Capital asset optimization, or if buying fuel for it counts as a immediate Revenue expenditure. At 5:30 AM on exam morning, everything simply looks like a tragic expenditure of your remaining available brain cells.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row items-start justify-between group">
+                <div class="w-full sm:w-[46%] bg-[#0c1122] border border-gray-800 p-6 rounded-2xl hover:border-emerald-500/50 transition duration-300 shadow-xl">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold font-mono text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded">CH 15</span>
+                        <span class="text-[10px] text-gray-500 font-mono">The Miracle Maker</span>
+                    </div>
+                    <h3 class="heading-font font-bold text-white text-lg">Rectification of Errors</h3>
+                    <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+                        The single greatest chapter ever written for back-benchers. A complete blueprint explicitly dedicated to fixing mistakes you never should have made in the first place. This is where you get introduced to the holy grail: **The Suspense Account**. It is a literal spiritual trash can where you dump all your mathematical crimes from the previous 14 chapters, leave the reconciliation blank, and hope the board checker passes you out of sheer theological pity.
+                    </p>
+                </div>
+                <div class="absolute left-4 sm:left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gray-800 rounded-full border-4 border-[#070a13] group-hover:bg-emerald-400 transition mt-8"></div>
+                <div class="w-full sm:w-[46%] mt-4 sm:mt-0"></div>
+            </div>
+
+        </div>
+
+        <section id="calcWidget" class="mt-24 bg-gradient-to-b from-[#0f152b] to-[#0c1020] border border-gray-800 p-8 rounded-3xl text-center shadow-2xl relative overflow-hidden transition-all duration-300">
+            <div class="absolute inset-0 bg-emerald-500/5 opacity-30 blur-2xl pointer-events-none"></div>
+            <h3 class="heading-font font-bold text-white text-xl tracking-wide">The Exam Hall Forced Balancing Engine</h3>
+            <p class="text-xs text-gray-400 mt-2 max-w-sm mx-auto">Simulate the exact high-stress emergency balancing protocol used with 60 seconds remaining on the clock.</p>
+            
+            <div class="mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto bg-[#070a13] p-5 rounded-2xl border border-gray-800">
+                <div class="text-left">
+                    <span class="text-[10px] text-gray-500 font-mono block uppercase tracking-wider">Your Debit Total</span>
+                    <span class="text-2xl font-bold text-white font-mono block mt-1 tracking-tight">184,340</span>
+                </div>
+                <div class="text-left border-l border-gray-800 pl-4">
+                    <span class="text-[10px] text-gray-500 font-mono block uppercase tracking-wider">Your Credit Total</span>
+                    <span id="creditTotal" class="text-2xl font-bold text-red-400 font-mono block mt-1 tracking-tight">184,310</span>
+                </div>
+            </div>
+
+            <div class="mt-8 max-w-md mx-auto">
+                <button onclick="triggerEmergencyBalancing()" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-black font-extrabold py-3.5 rounded-xl text-xs transition-all uppercase tracking-widest shadow-lg shadow-emerald-950/40">
+                    Apply Desi Eraser Overwrite Technique
+                </button>
+                <p id="calcStatus" class="text-xs text-red-400 font-medium italic mt-4 block">Status: Trial balance mismatch. Examiner is actively walking towards your row.</p>
+            </div>
+        </section>
+
+        <footer class="text-center mt-24 pt-8 border-t border-gray-900/60">
+            <p class="text-xs text-gray-600 font-mono italic">
+                "I wrote my roll number using double-entry syntax. The checker owes me at least a grace pass."
+            </p>
+            <p class="text-[10px] font-bold text-gray-500 mt-4 tracking-widest uppercase bg-[#0c1122] inline-block px-3 py-1 rounded border border-gray-800">
+                Orchestrated via Veloce Digital Protocols | 2026
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Track page scrolling to change the Book Dusting Meter values dynamically
+        window.onscroll = function() {
+            let scrollTop = window.scrollY;
+            let docHeight = document.body.offsetHeight - window.innerHeight;
+            let scrollPercent = (scrollTop / docHeight) * 100;
+            
+            let bar = document.getElementById('dustBar');
+            let statusText = document.getElementById('dustStatus');
+            
+            // Invert the bar fill down to 0% as they reach the bottom crime scene
+            let remainingCleanliness = 100 - scrollPercent;
+            bar.style.width = remainingCleanliness + '%';
+            
+            if (remainingCleanliness > 75) {
+                statusText.innerText = "Book Condition: 100% Brand New (Urdu Bazar Fragrance)";
+                statusText.className = "text-[11px] font-mono font-semibold text-emerald-400 uppercase";
+            } else if (remainingCleanliness > 40) {
+                statusText.innerText = "Book Condition: Dusty (Sitting under the computer table)";
+                statusText.className = "text-[11px] font-mono font-semibold text-yellow-500 uppercase";
+            } else {
+                statusText.innerText = "Book Condition: Opened for 3 minutes at 3:00 AM";
+                statusText.className = "text-[11px] font-mono font-semibold text-red-400 uppercase";
+            }
+        };
+
+        // Trigger the interactive mock calculator balancing simulation
+        function triggerEmergencyBalancing() {
+            // Balance the ledger matching text values
+            const creditText = document.getElementById('creditTotal');
+            creditText.innerText = '184,340';
+            creditText.className = 'text-2xl font-bold text-emerald-400 font-mono block mt-1 tracking-tight';
+            
+            // Transform status banner with animations
+            const statusBox = document.getElementById('calcStatus');
+            statusBox.innerText = "SUCCESS: Crooked numbers erased with spit, overwritten with thick black pointer. Both columns match perfectly. Do not make direct eye contact with the board monitor.";
+            statusBox.className = "text-xs text-emerald-400 font-bold mt-4 block leading-relaxed uppercase tracking-wider";
+            
+            // Animate the parent container box container layout
+            const widget = document.getElementById('calcWidget');
+            widget.className = "mt-24 bg-gradient-to-b from-[#0f152b] to-[#0c1020] border text-center shadow-2xl relative overflow-hidden transition-all duration-300 border-emerald-500/50 shake-effect";
+            
+            // Remove shaking animation effect safely after 600ms
+            setTimeout(() => {
+                widget.className = "mt-24 bg-gradient-to-b from-[#0f152b] to-[#0c1020] border text-center shadow-2xl relative overflow-hidden transition-all duration-300 border-emerald-500 shadow-emerald-950/30";
+            }, 600);
+        }
+    </script>
+</body>
+</html>
